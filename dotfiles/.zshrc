@@ -11,3 +11,7 @@ zstyle :compinstall filename '/home/ssutherland/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+bindkey '\e[3~' delete-char
+bindkey '^R' history-incremental-search-backward
+source ~/workspace/devenv/submods/ssh-find-agent/ssh-find-agent.sh
